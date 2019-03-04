@@ -1,0 +1,150 @@
+body {
+  font-family: 'MedievalSharp', cursive;
+
+  text-align: center;
+  margin: auto;
+  background-image: url("https://i.ytimg.com/vi/plF8mdhANMM/maxresdefault.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 40px;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+h1 {
+  text-shadow: 3px 2px 7px rgba(150, 150, 150, 1);
+}
+
+p {
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+
+
+#form-content {
+    background-color: #F1F1D4;
+    margin: 0 auto;
+    border-radius: 5px;
+    width: 80%;
+    max-width: 900px;
+    padding: 10px;
+    padding-top: 20px;
+  -webkit-box-shadow: 10px 10px 28px 0px rgba(0,0,0,0.41);
+-moz-box-shadow: 10px 10px 28px 0px rgba(0,0,0,0.41);
+box-shadow: 10px 10px 28px 0px rgba(0,0,0,0.41);
+}
+
+form {
+    display: block;
+    margin-top: 0em;
+}
+
+
+.labels {
+    display: inline-block;
+    text-align: right;
+    width: 40%;
+    padding: 5px;
+    vertical-align: top;
+    margin-top: 10px;
+  
+}
+
+.rightTab {
+    display: inline-block;
+    text-align: left;
+    width: 48%;
+    vertical-align: middle;
+}
+
+.input-field {
+    height: 20px;
+    width: 280px;
+    padding: 5px;
+    margin: 10px;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+.dropdown {
+    height: 35px;
+    width: 140px;
+    padding: 5px;
+    margin: 10px;
+    margin-top: 15px;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+option {
+    font-weight: normal;
+    display: block;
+    white-space: pre;
+    min-height: 1.2em;
+    padding: 0px 2px 1px;
+}
+
+#comments {
+  height: 50px;
+  resize: vertical;
+}
+
+#submit {
+    background-color: black;
+    border-radius: 5px;
+    color: white;
+    font-size: 1em;
+    height: 40px;
+    width: 96px;
+    margin: 10px;
+    border: 0px solid;
+  opacity: .7;
+}
+
+#submit:hover {
+  opacity: 1;
+}
+
+.radio, .checkbox {
+  position: relative;
+  left: -43px;
+  margin-left: 10px;
+  display: block;
+  padding-bottom: 10px;
+}
+
+.weeklyChoices,
+input[type="checkbox"] {
+  float: left;
+  margin-right: 5px;
+}
+
+
+
+/*Mobile responsive code*/
+@media screen and (max-width: 833px) {
+  .input-field {
+    width: 80%;
+  }
+  select {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .labels {
+    width: 100%;
+    text-align: left;
+  }
+  .rightTab {
+    width: 80%;
+    float: left;
+  }
+  .input-field {
+    width: 100%;
+  }
+  select {
+    width: 100%;
+  }
+}

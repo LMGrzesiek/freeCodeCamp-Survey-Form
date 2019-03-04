@@ -1,0 +1,143 @@
+<!doctype html>
+<html>
+
+<head>
+  <title>freeCodeCampe Survey Form</title>
+  <link href="https://fonts.googleapis.com/css?family=MedievalSharp" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+
+<body>
+  <div>
+    <h1 id="title">Bulid Your Character</h1>
+  </div>
+  <section id="form-content">
+    <p id="description">Do you think you have what it takes to join our campaign? Prove it by building your ideal class, below. Are you a mighty dragon-born , or a nimble forest gnome? A master swordsman, or a ranged spell savant? Let your imagination run amock and show
+      us what you will bring to the table. </p>
+    <form id="survey-form">
+      <div class="rowTab">
+        <div class="labels">
+          <label id="name-label" for "name">
+            * Name:
+          </label>
+        </div>
+          <div class="rightTab">
+            <input autofocus type="text" id="name" class="input-field" placeholder="What do ye call thee?" required>
+          </div>
+        </div>
+     
+
+      <div class="rowTab">
+        <div class="labels">
+          <label id="email-label" for "email">
+            * Email:
+          </label>
+           </div>
+          <div class="rightTab">
+            <input autofocus type="email" id="email" class="input-field" placeholder="fnipper@dragonslayer.org" required>
+          </div>
+        </div>
+     
+
+      <div class="rowTab">
+        <div class="labels">
+          <label id="number-label" for "number">
+            * RPG experience (years):
+          </label>
+          </div>
+          <div class="rightTab">
+            <input autofocus type="number" id="number" min="0" max="99" class="input-field" placeholder="The more, the better" required>
+          </div>
+        </div>
+      
+
+      <div class="rowTab">
+        <div class="labels">
+          <label for "choiceRace">What is the race of your choice?</label>
+        </div>
+        <div class="rightTab">
+          <select id="dropdown" name="choiceRace" class="dropdown">
+            <option disabled value>Choose an option wisely</option>
+            <option value="human">Human</option>
+            <option value="dragonBorn">Dragon-Born</option>
+            <option value="gnome">Gnome</option>
+            <option value="orc">Orc</option>
+            <option value="elf">Elf</option>
+            <option value="celestial">Celestial</option>
+          </select>
+        </div>
+      </div>
+      
+      <div class="rowTab">
+        <div class="labels">
+          <label for "choiceClass">What class would you like to play?</label>
+        </div>
+        <div class="rightTab">
+          <select id="dropdown" name="choiceClass" class="dropdown">
+            <option disabled value>Choose an option wisely</option>
+            <option value="ranger">Ranger</option>
+            <option value="rogue">Rogue</option>
+            <option value="barbarian">Barbarian</option>
+            <option value="monk">Monk</option>
+            <option value="paladin">Paladin</option>
+            <option value="bard">Bard</option>
+          </select>
+        </div>
+      </div>
+      
+      <div class="rowTab">
+      <div class="labels">
+        <label for="weeklyChoice">* How many days a week could you meet for a game?</label>
+      </div>
+      <div class="rightTab">
+        <ul style="list-style: none;">
+          <li class="radio"><label>Once<input name="radio-buttons" value="1"  type="radio" class="weeklyChoices" ></label></li>
+          <li class="radio"><label>Twice<input name="radio-buttons" value="2"  type="radio" class="weeklyChoices" ></label></li>
+          <li class="radio"><label>Thrice<input name="radio-buttons" value="3"  type="radio" class="weeklyChoices" ></label></li>
+        </ul>
+      </div>
+    </div>
+      
+      <div class="rowTab">
+      <div class="labels">
+        <label for="preferences">What starting weapons would you prefer? <br>(Check all that apply): </label>
+      </div>
+      <div class="rightTab">
+        <ul id="preferences" style="list-style: none;">
+          <li class="checkbox"><label><input name="prefer" value="1" type="checkbox" class="userRatings">Club</label></li>
+          <li class="checkbox"><input name="prefer" value="2" type="checkbox" class="userRatings">Dagger</li>
+          <li class="checkbox"><label><input name="prefer" value="3" type="checkbox" class="userRatings">Greatclub</label></li>
+          <li class="checkbox"><label><input name="prefer" value="4" type="checkbox" class="userRatings">Handaxe</label></li>
+          <li class="checkbox"><label><input name="prefer" value="5" type="checkbox" class="userRatings">Javelin</label></li>
+          <li class="checkbox"><label><input name="prefer" value="6" type="checkbox" class="userRatings">Light Hammer</label></li>
+          <li class="checkbox"><label><input name="prefer" value="7" type="checkbox" class="userRatings">Mace</label></li>
+          <li class="checkbox"><label><input name="prefer" value="8" type="checkbox" class="userRatings">Quarterstaff</label></li>
+          <li class="checkbox"><label><input name="prefer" value="9" type="checkbox" class="userRatings">Sickle</label></li>
+          <li class="checkbox"><label><input name="prefer" value="10" type="checkbox" class="userRatings">Spear</label></li>
+          <li class="checkbox"><label><input name="prefer" value="10" type="checkbox" class="userRatings">Crossbow</label></li>
+          <li class="checkbox"><label><input name="prefer" value="10" type="checkbox" class="userRatings">Shortbow</label></li>
+          <li class="checkbox"><label><input name="prefer" value="10" type="checkbox" class="userRatings">Sling</label></li>
+        </ul>
+      </div>
+    </div>
+      
+      
+      <div class="rowTab">
+        <div class="labels">
+          <label for="comments">Describe your play style:</label>
+        </div>
+        <div class="rightTab">
+          <textarea id="comments" class="input-field" name="comment" placeholder="Sell yourself."></textarea>
+        </div>
+      </div>
+      
+        <button id="submit" type="submit">Submit</button>
+    </form>
+
+  </section>
+     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+
+</html>
